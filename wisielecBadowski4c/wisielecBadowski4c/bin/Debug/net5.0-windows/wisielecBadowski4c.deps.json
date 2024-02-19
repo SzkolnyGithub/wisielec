@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "wisielecBadowski4c/1.0.0": {
+        "runtime": {
+          "wisielecBadowski4c.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "wisielecBadowski4c/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
