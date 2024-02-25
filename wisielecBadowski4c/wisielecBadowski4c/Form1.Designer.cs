@@ -1,7 +1,7 @@
 ﻿
 namespace wisielecBadowski4c
 {
-    partial class Form1
+    partial class gra
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,80 +29,77 @@ namespace wisielecBadowski4c
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.test = new System.Windows.Forms.Label();
-            this.zle = new System.Windows.Forms.Label();
-            this.template = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.zdj = new System.Windows.Forms.ImageList(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // test
-            // 
-            this.test.AutoSize = true;
-            this.test.Location = new System.Drawing.Point(162, 62);
-            this.test.Name = "test";
-            this.test.Size = new System.Drawing.Size(26, 15);
-            this.test.TabIndex = 0;
-            this.test.Text = "test";
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gra));
+            zle = new System.Windows.Forms.Label();
+            wisi = new System.Windows.Forms.PictureBox();
+            zdj = new System.Windows.Forms.ImageList(components);
+            reset = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)wisi).BeginInit();
+            SuspendLayout();
             // 
             // zle
             // 
-            this.zle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.zle.Location = new System.Drawing.Point(12, 9);
-            this.zle.Name = "zle";
-            this.zle.Size = new System.Drawing.Size(110, 586);
-            this.zle.TabIndex = 1;
+            zle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            zle.Location = new System.Drawing.Point(12, 9);
+            zle.Name = "zle";
+            zle.Size = new System.Drawing.Size(110, 586);
+            zle.TabIndex = 1;
             // 
-            // template
+            // wisi
             // 
-            this.template.AutoSize = true;
-            this.template.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.template.Location = new System.Drawing.Point(196, 266);
-            this.template.Name = "template";
-            this.template.Size = new System.Drawing.Size(0, 28);
-            this.template.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(455, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(365, 550);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            wisi.Location = new System.Drawing.Point(455, 29);
+            wisi.Name = "wisi";
+            wisi.Size = new System.Drawing.Size(365, 550);
+            wisi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            wisi.TabIndex = 3;
+            wisi.TabStop = false;
             // 
             // zdj
             // 
-            this.zdj.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.zdj.ImageSize = new System.Drawing.Size(16, 16);
-            this.zdj.TransparentColor = System.Drawing.Color.Transparent;
+            zdj.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            zdj.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("zdj.ImageStream");
+            zdj.TransparentColor = System.Drawing.Color.Transparent;
+            zdj.Images.SetKeyName(0, "sz1.png");
+            zdj.Images.SetKeyName(1, "sz2.png");
+            zdj.Images.SetKeyName(2, "sz3.png");
+            zdj.Images.SetKeyName(3, "sz4.png");
+            zdj.Images.SetKeyName(4, "sz5.png");
+            zdj.Images.SetKeyName(5, "sz6.png");
+            zdj.Images.SetKeyName(6, "sz7.png");
+            zdj.Images.SetKeyName(7, "sz8.png");
             // 
-            // Form1
+            // reset
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 604);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.template);
-            this.Controls.Add(this.zle);
-            this.Controls.Add(this.test);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            reset.Location = new System.Drawing.Point(228, 40);
+            reset.Name = "reset";
+            reset.Size = new System.Drawing.Size(110, 48);
+            reset.TabIndex = 4;
+            reset.Text = "Restart";
+            reset.UseVisualStyleBackColor = true;
+            reset.Click += reset_Click;
+            // 
+            // gra
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(844, 604);
+            Controls.Add(reset);
+            Controls.Add(wisi);
+            Controls.Add(zle);
+            Name = "gra";
+            Text = "Wisielec";
+            KeyDown += Form1_KeyDown;
+            MouseMove += Form1_MouseMove;
+            ((System.ComponentModel.ISupportInitialize)wisi).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private System.Windows.Forms.Label test;
         private System.Windows.Forms.Label zle;
-        private System.Windows.Forms.Label template;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox wisi;
         private System.Windows.Forms.ImageList zdj;
+        private System.Windows.Forms.Button reset;
     }
 }
 
