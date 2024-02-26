@@ -14,7 +14,7 @@ namespace wisielecBadowski4c
 {
     public partial class gra : Form
     {
-        Label[] labele = new Label[10];
+        Label[] labele;
         char[] symbole = new char[27];
         int bading = 0;
         int dedCount = 0;
@@ -22,8 +22,6 @@ namespace wisielecBadowski4c
         char[] bad = new char[27];
         string[] teksty = new string[50];
         string wybrany = "";
-        int cel = 0;
-        int curr = 0;
         private void ustaw()
         {
             reset.Enabled = false;
@@ -38,13 +36,13 @@ namespace wisielecBadowski4c
                 if (temp2 == i)
                 {
                     wybrany = teksty[i]; // losowanie dziala
-                    //test.Text = wybrany;
+                    //zle.Text = wybrany;
                 }
             }
             int left = 215;
             int top = 270;
             int count = wybrany.Length;
-            cel = count;
+            labele = new Label[count];
             for (int i = 0; i < count; i++)
             {
                 labele[i] = new Label();
@@ -62,15 +60,30 @@ namespace wisielecBadowski4c
             ustaw();
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void reset_Click_1(object sender, EventArgs e)
         {
-            //zle.Text = curr.ToString();
+            zle.Text = "";
+            foreach (Label label in labele)
+            {
+                label.Dispose();
+            }
+            ustaw();
+            reset.Enabled = false;
+            ded = false;
+            Array.Clear(bad, 0, bad.Length);
+            bading = 0;
+            dedCount = 0;
+            wisi.Image = null;
+        }
+
+        private void gra_KeyDown(object sender, KeyEventArgs e)
+        {
             if (ded)
             {
+                reset.Enabled = true;
                 return;
             }
             char temp = (char)e.KeyCode;
-            //test.Text = temp.ToString();
             for (int i = 0; i < bad.Length; i++)
             {
                 if (temp == bad[i])
@@ -87,20 +100,11 @@ namespace wisielecBadowski4c
             {
                 if (wybrany.Contains(temp))
                 {
-                    for (int j = 0; j < wybrany.Length; j++)
+                    for (int j = 0; j < labele.Length; j++)
                     {
                         if (temp == wybrany[j])
                         {
                             labele[j].Text = temp.ToString();
-                            /*curr++;
-                            if (curr == 10)
-                            {
-                                MessageBox.Show("Gratulacje! Udało ci się ukończyć rozgrywkę!", "Zwycięstwo!"); // nie dziala
-                                reset.Enabled = true;
-                                ded = true;
-                                break;
-                            }*/
-                            break;
                         }
                     }
                 }
@@ -109,7 +113,7 @@ namespace wisielecBadowski4c
                     zle.Text += temp.ToString() + ", ";
                     bad[bading] = temp;
                     bading++;
-                    wisi.Image = zdj.Images[dedCount];
+                    wisi.Image = new Bitmap(System.AppDomain.CurrentDomain.BaseDirectory + ("sz" + (dedCount+1)) + ".png");
                     dedCount++;
                     if (dedCount == 8)
                     {
@@ -119,34 +123,19 @@ namespace wisielecBadowski4c
                     break;
                 }
             }
-        }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            //zle.Text = "X: " + e.X + " Y: " + e.Y;
-        }
-
-        private void reset_Click(object sender, EventArgs e) // naprawic
-        {
-            /*zle.Text = "";
+            int counter = 0;
             for (int i = 0; i < labele.Length; i++)
             {
-                labele[i] = new Label();
-                labele[i].Text = "";
-            }
-            string temp = File.ReadAllText(System.AppDomain.CurrentDomain.BaseDirectory + "/teksty.txt");
-            teksty = temp.Split(";");
-            Random rand = new Random();
-            int temp2 = rand.Next(0, teksty.Length);
-            for (int i = 0; i < teksty.Length; i++)
-            {
-                if (temp2 == i)
+                if(labele[i].Text != "_")
                 {
-                    wybrany = teksty[i]; // losowanie dziala
-                    //test.Text = wybrany;
+                    counter++;
                 }
             }
-            reset.Enabled = false;*/
+            if(counter == labele.Length)
+            {
+                MessageBox.Show("Gratulacje! Udało ci się ukończyć rozgrywkę!", "Zwycięstwo!");
+                ded = true;
+            }
         }
     }
 } // 215 270

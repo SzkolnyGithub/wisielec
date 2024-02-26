@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "51fXub71HUDScSwCF611vgFj4s27n0GXuJkZSm29aic8lr/dQ8pQVqyJkuEFMBWq4fnrW0v4KhqRNVXVWnI7eA==",
+  "dgSpecHash": "+kg7CrL0k8d6poTia8FpzCyS2jehIQyTJfEUF222Ga8tjRCEN/jMwhaNavJyxWKCCqOScJtNyGy2zxRP0Z7DyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artur\\source\\repos\\wisielecBadowski4c\\wisielecBadowski4c\\wisielecBadowski4c.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\artur\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\artur\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\artur\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\artur\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\abadowski\\source\\repos\\wisielecBadowski4c\\wisielecBadowski4c\\wisielecBadowski4c.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

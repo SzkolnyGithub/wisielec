@@ -6,7 +6,6 @@ C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\bin\Debug\
 C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\bin\Debug\net5.0-windows\ref\wisielecBadowski4c.dll
 C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\bin\Debug\net5.0-windows\wisielecBadowski4c.pdb
 C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.csproj.AssemblyReference.cache
-C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.Form1.resources
 C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.csproj.GenerateResource.cache
 C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.AssemblyInfoInputs.cache
@@ -34,3 +33,4 @@ C:\Users\artur\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5
 C:\Users\artur\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.genruntimeconfig.cache
 C:\Users\artur\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\ref\wisielecBadowski4c.dll
 C:\Users\artur\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.gra.resources
+C:\Users\abadowski\source\repos\wisielecBadowski4c\wisielecBadowski4c\obj\Debug\net5.0-windows\wisielecBadowski4c.gra.resources
